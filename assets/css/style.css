@@ -490,7 +490,7 @@ header nav ul li .nav-link.active::after {
 
 .experience .grid-container #oratory,
 .experience .grid-container #photography {
-    justify-content: space-evenly;
+    justify-content: center;
     max-height: 100%;
 }
 
@@ -685,5 +685,6 @@ header nav ul li .nav-link.active::after {
     color: #000;
     margin-left: 5px;
 }
+
 
 
