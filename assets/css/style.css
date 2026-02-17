@@ -266,9 +266,9 @@ header nav ul li .nav-link.active::after {
 .aboutme .descriptions .para {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 1000px;
-    height: auto;
+    max-height: 100%;
     padding: 15px 20px;
     box-shadow: 0 0 3px #000;
     border-radius: 10px;
@@ -294,6 +294,7 @@ header nav ul li .nav-link.active::after {
     width: 250px;
     height: 150px;
     margin: 10px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -682,92 +683,5 @@ header nav ul li .nav-link.active::after {
     text-decoration: none;
     color: #000;
     margin-left: 5px;
-}
-
-/* RESPONSIVE */
-@media (max-width: 1024px) {
-
-  .home,
-  .aboutme,
-  .contact {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .aboutme .sidebar {
-    height: auto;
-    width: 100%;
-    margin-bottom: 30px;
-  }
-
-  .aboutme .descriptions {
-    height: auto;
-    width: 100%;
-  }
-
-  .aboutme .descriptions .para {
-    width: 100%;
-    height: auto;
-  }
-
-  .experience .grid-container {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "box-1"
-      "box-3"
-      "box-4"
-      "box-2";
-  }
-
-}
-
-
-@media (max-width: 768px) {
-
-  header {
-    padding: 10px;
-  }
-
-  header nav {
-    width: auto;
-    margin-right: 10px;
-  }
-
-  header nav ul {
-    gap: 15px;
-  }
-
-  .home {
-    text-align: center;
-  }
-
-  .home .hero .socials {
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
-
-  .home .hero-img {
-    width: 250px;
-    height: 250px;
-    margin: 30px 0;
-  }
-
-  .aboutme .descriptions .languages .techs {
-    grid-template-columns: 1fr;
-    height: auto;
-  }
-
-  .contact {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contact .contact-left,
-  .contact .contact-right {
-    width: 100%;
-  }
-
 }
 
